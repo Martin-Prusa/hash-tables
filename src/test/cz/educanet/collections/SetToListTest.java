@@ -24,7 +24,7 @@ class SetToListTest {
         List<Integer> list2 = Arrays.asList(20, 25, 40, 25, 90);
 
         for (int i = 0; i < list2.size(); i++) {
-            Assertions.assertTrue(set.add(list2.get(i)));
+            set.add(list2.get(i));
         }
 
         Utils.listEquals(list, set.toList());

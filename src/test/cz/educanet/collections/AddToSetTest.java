@@ -37,7 +37,7 @@ class AddToSetTest {
         }
 
         for (int i = 0; i < list.size(); i++) {
-            Assertions.assertFalse(set.add(i));
+            Assertions.assertFalse(set.add(list.get(i)));
         }
 
         Utils.listEquals(list, set.toList());

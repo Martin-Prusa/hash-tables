@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,7 +48,7 @@ class RemoveFromSetTest {
 
     @Test
     public void should_RemoveItem() {
-        List<Integer> list = Arrays.asList(20, 25, 40, 90);
+        List<Integer> list = new ArrayList<>(Arrays.asList(20, 25, 40, 90));
 
         for (int i = 0; i < list.size(); i++) {
             set.add(list.get(i));

@@ -57,8 +57,8 @@ class RemoveFromSetTest {
         set.remove(20);
         set.remove(40);
 
-        list.remove(20);
-        list.remove(40);
+        list.remove(list.indexOf(20));
+        list.remove(list.indexOf(40));
 
         Utils.listEquals(list, set.toList());
     }
